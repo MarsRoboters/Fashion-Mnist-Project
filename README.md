@@ -46,9 +46,9 @@
   - Experiment 1: Model Comparison
     - Objective: Determine which model best predicts the Fashion MNIST images. Hypothesis: ANN will have the highest accuracy due to its ability to capture the complexity of image recognition.
     - Results:
-      - ANN: 88.4%
-      - SVM: 87.5%
-      - kNN: 81.8%
+      - ANN accuracy: 88.4%
+      - SVM accuracy: 87.5%
+      - kNN accuracy: 81.8%
   - Experiment 2: Augmented Image Prediction
     - Objective: Determine which model can best predict augmented images they were never trained on. Hypothesis: All models will equally struggle to predict image augmentation with inverted and resizing being the most difficult to predict.
     - Findings: All models struggled to predict image augmentations at relatively equal proportions. Noise and Blur had the best accuracy across models, while inverted, resized, and flipped had a large drop in prediction accuracy. Horizontally flipped images did not predict any shoe type well.
