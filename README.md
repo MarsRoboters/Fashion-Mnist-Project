@@ -64,10 +64,10 @@
     - Findings: Cross Entropy had the highest accuracy with no noise and as noise was added, all loss functions performed similarly.
 
 **Key Results:**
-  - Best Model: ANN had the highest accuracy on the original dataset.
-  - Augmentation Impact: All models were affected by image augmentations, with inverted pixels, resizing, and horizontal flip causing the most significant accuracy drops.
-  - Noise Robustness: kNN was the most robust model as noise levels increased.
-  - Loss Functions: Changing the loss function did not significantly improve the robustness of the ANN.
+  - Best Model: The ANN achieved the highest accuracy on the original dataset with 88.4%.
+- Augmentation Impact: All models experienced a decline in accuracy with augmented images, particularly with inverted pixels, resizing, and horizontal flips.
+- Noise Robustness: kNN was the most robust to increasing noise levels, maintaining better performance compared to SVM and ANN.
+- Loss Function Comparison: Different loss functions for ANN (Cross Entropy, Hinge, MSE, MAE) showed similar performance as noise levels increased, with Cross Entropy having the highest accuracy without noise.
 
 **Conclusion:**
 The ANN model demonstrated the highest accuracy on the Fashion MNIST dataset, followed closely by SVM. kNN was the most robust to noise. Image augmentations generally decreased model accuracy, with certain augmentations having a more pronounced effect. Future work could explore more complex architectures, hyperparameter tuning, and additional data augmentation techniques to further improve model performance.
